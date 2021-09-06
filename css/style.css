@@ -1,0 +1,781 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  max-height: 1728px;
+  overflow: hidden;
+}
+
+.header {
+  background: url("../img/bacground_озон-3500 1.jpg");
+  position: absolute;
+  width: 2560px;
+  height: 702.69px;
+  left: -290px;
+  top: 0px;
+}
+
+.container {
+  max-width: 1980px;
+  height: 1728px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.text__data {
+  position: absolute;
+  width: 192px;
+  height: 80px;
+  left: 439.5px;
+  top: 199px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.text__text {
+  position: absolute;
+  width: 522px;
+  height: 120px;
+  left: 439.5px;
+  top: 291px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+.text__text2 {
+  position: absolute;
+  width: 493px;
+  height: 102px;
+  left: 439.5px;
+  top: 446px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E0C1EB;
+}
+
+.text__text3 {
+  position: absolute;
+  width: 352px;
+  height: 28px;
+  left: 428px;
+  top: 592px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E1AFF2;
+}
+
+.content {
+  position: absolute;
+  width: 724px;
+  height: 180px;
+  left: 627.5px;
+  top: 760px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.type-1 {
+  width: 724px;
+  height: 50px;
+  font-size: 25px;
+  background: #FFFFFF;
+  border: 1px solid #9B58C1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+          box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+  border-radius: 5px;
+  -webkit-transition: 0.3s border-color;
+  transition: 0.3s border-color;
+}
+
+.type-1:hover {
+  border: 1px solid #aaa;
+}
+
+.type-2 {
+  width: 724px;
+  height: 50px;
+  font-size: 25px;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #9B58C1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.type-2:hover {
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.type-3 {
+  width: 724px;
+  height: 50px;
+  font-size: 25px;
+  background: #FFFFFF;
+  border: 1px solid #9B58C1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.type-3:hover {
+  background-color: #fafafa;
+}
+
+.text__bottom {
+  position: absolute;
+  width: 730px;
+  height: 61px;
+  left: 624.5px;
+  top: 987px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* or 121% */
+  text-align: center;
+  color: #808080;
+}
+
+.botton {
+  text-align: center;
+}
+
+.button__vnut {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  left: 843px;
+  top: 1089px;
+  background-color: #F81155;
+  border-radius: 24px;
+}
+
+.footer__block {
+  position: absolute;
+  width: 750px;
+  height: 330px;
+  left: 624.5px;
+  top: 1286px;
+  background: #A32CE8;
+}
+
+.imag__bootom {
+  margin: 0 auto;
+  width: 87.26px;
+  height: 87.26px;
+  left: 946px;
+  top: 1233px;
+}
+
+.footer__img {
+  position: relative;
+  width: 87.26px;
+  height: 87.26px;
+  left: calc(50% - 87.26px/2 - 0.37px);
+  bottom: 50px;
+}
+
+.glav {
+  display: inline-block;
+  padding: 0px 0px 10px 0px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  color: #Fff;
+}
+
+.footertext {
+  height: 174.84px;
+  left: 33.86%;
+  right: 33.53%;
+  top: 1335.28px;
+  font-family: Arial;
+  font-style: normal;
+  padding: 10px;
+  font-size: 22px;
+  line-height: 22px;
+  /* or 100% */
+  color: #F9EDFD;
+}
+
+@media (max-width: 1348px) {
+  .wrapper {
+    max-height: 1322px;
+    overflow: hidden;
+  }
+
+  .header {
+    background: url("../img/bacground_озон-3500 1.jpg");
+    position: absolute;
+    width: 1348px;
+    height: 478.41px;
+    left: -256px;
+    top: 0px;
+  }
+
+  .container {
+    max-width: 768px;
+    height: 1322px;
+    margin: 0 auto;
+    background: #FFFFFF;
+  }
+
+  .text__data {
+    position: absolute;
+    width: 253px;
+    height: 23px;
+    left: 19px;
+    top: 149px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 80px;
+    /* or 444% */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+  }
+
+  .text__text {
+    position: absolute;
+    width: 373px;
+    height: 100px;
+    left: 19px;
+    top: 197px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    /* or 100% */
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+
+  .text__text2 {
+    position: absolute;
+    width: 337px;
+    height: 73px;
+    left: 19px;
+    top: 312px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    /* or 107% */
+    letter-spacing: -0.02em;
+    color: #E0C1EB;
+  }
+
+  .text__text3 {
+    position: absolute;
+    width: 352px;
+    height: 28px;
+    left: 19px;
+    top: 421px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    /* or 208% */
+    color: #E1AFF2;
+  }
+
+  .content {
+    position: absolute;
+    width: 640px;
+    height: 180px;
+    left: 64px;
+    top: 524px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .type-1 {
+    width: 640px;
+    height: 50px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+            box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+    border-radius: 5px;
+    -webkit-transition: 0.3s border-color;
+    transition: 0.3s border-color;
+  }
+
+  .type-1:hover {
+    border: 1px solid #aaa;
+  }
+
+  .type-2 {
+    width: 640px;
+    height: 50px;
+    font-size: 20px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .type-2:hover {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .type-3 {
+    width: 640px;
+    height: 50px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .type-3:hover {
+    background-color: #fafafa;
+  }
+
+  .text__bottom {
+    position: absolute;
+    width: 534px;
+    height: 50px;
+    left: 119px;
+    top: 727px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* or 125% */
+    text-align: center;
+    color: #808080;
+  }
+
+  .botton {
+    text-align: center;
+  }
+
+  .button__vnut {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    background-color: #F81155;
+    border-radius: 24px;
+    position: absolute;
+    width: 260px;
+    height: 56px;
+    left: 254px;
+    top: 810px;
+  }
+
+  .footer__block {
+    position: absolute;
+    width: 648px;
+    height: 260px;
+    left: 60px;
+    top: 956px;
+    background: #A32CE8;
+  }
+
+  .imag__bootom {
+    position: absolute;
+    width: 87.26px;
+    height: 87.26px;
+    left: 340px;
+    top: 903px;
+  }
+
+  .footer__img {
+    position: relative;
+    width: 87.26px;
+    height: 87.26px;
+    left: calc(50% - 87.26px/2 - 0.37px);
+    bottom: 50px;
+  }
+
+  .glav {
+    display: inline-block;
+    padding: 0px 0px 5px 0px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 22px;
+    color: #Fff;
+  }
+
+  .footertext {
+    height: 187px;
+    left: 12.78%;
+    right: 13.02%;
+    top: 1002.3px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #F9EDFD;
+  }
+}
+@media (max-width: 429px) {
+  .wrapper {
+    max-height: 1507px;
+    overflow: hidden;
+  }
+
+  .header {
+    background: url("../img/bacground_озон-3500 1.jpg");
+    position: absolute;
+    width: 429.89px;
+    height: 528.98px;
+    left: -28.89px;
+    top: 0px;
+  }
+
+  .container {
+    width: 375px;
+    height: 1507px;
+    margin: 0 auto;
+    background: #FFFFFF;
+  }
+
+  .text__data {
+    position: absolute;
+    width: 253px;
+    height: 23px;
+    left: 25px;
+    top: 73px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+  }
+
+  .text__text {
+    position: absolute;
+    width: 334px;
+    height: 80px;
+    left: 25px;
+    top: 104px;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+
+  .text__text2 {
+    position: absolute;
+    width: 329px;
+    height: 47px;
+    left: 25px;
+    top: 192px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #E0C1EB;
+  }
+
+  .text__text3 {
+    position: absolute;
+    width: 343px;
+    height: 28px;
+    left: 25px;
+    top: 483px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #E1AFF2;
+  }
+
+  .content {
+    position: absolute;
+    width: 345px;
+    height: 180px;
+    left: 15px;
+    top: 564px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .type-1 {
+    width: 345px;
+    height: 50px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+            box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+    border-radius: 5px;
+    -webkit-transition: 0.3s border-color;
+    transition: 0.3s border-color;
+  }
+
+  .type-1:hover {
+    border: 1px solid #aaa;
+  }
+
+  .type-2 {
+    width: 345px;
+    height: 50px;
+    font-size: 20px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .type-2:hover {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .type-3 {
+    width: 345px;
+    height: 50px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #9B58C1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .type-3:hover {
+    background-color: #fafafa;
+  }
+
+  .text__bottom {
+    position: absolute;
+    width: 345px;
+    height: 61px;
+    left: 15px;
+    top: 767px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #808080;
+  }
+
+  .botton {
+    text-align: center;
+  }
+
+  .button__vnut {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    background-color: #F81155;
+    border-radius: 24px;
+    position: absolute;
+    width: 260px;
+    height: 56px;
+    left: 58px;
+    top: 863px;
+  }
+
+  .footer__block {
+    position: absolute;
+    width: 345px;
+    height: 344px;
+    left: 15px;
+    top: 1052px;
+    background: #A32CE8;
+  }
+
+  .imag__bootom {
+    position: absolute;
+    width: 87.26px;
+    height: 87.26px;
+    left: 144px;
+    top: 999px;
+  }
+
+  .footer__img {
+    position: relative;
+    width: 87.26px;
+    height: 87.26px;
+    left: calc(50% - 87.26px/2 - 0.37px);
+    bottom: 50px;
+  }
+
+  .glav {
+    display: inline-block;
+    padding: 0px 0px 5px 0px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 22px;
+    color: #Fff;
+  }
+
+  .footertext {
+    height: 250px;
+    left: 10.4%;
+    right: 8.8%;
+    top: 1113px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F9EDFD;
+  }
+}
